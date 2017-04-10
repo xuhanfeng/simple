@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app='myapp'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<title>Document</title>
+	<script>document.documentElement.style.fontSize=document.documentElement.clientWidth/6.4+"px"</script>
+	<style>
+	@font-face {
+	  font-family: 'iconfont';
+	  src: url(fonts/iconfont.eot) format("embedded-opentype");
+	  src: url(fonts/iconfont.ttf) format("truetype"), url(fonts/iconfont.svg) format("svg"), url(fonts/iconfont.woff) format("woff"); }
+	div {
+	  font-family: 'iconfont';
+	  font-size: .23rem;
+	  color: #fff;
+	   }
+	</style>
+</head>
+<body>
+	<div class='x_container'>
+		<header class='x_header'>
+			<a href="javascript:;" class='x_a1'><h1 class='x_kai'>开财宝</h1></a>
+			<a href="javascript:;" class='x_a2'></a>
+		</header>
+		<div class='x_big' style="overflow: hidden;">
+			<div ui-view></div>			
+		</div> 	
+		<footer class='x_footer'>
+			<a data-title="开财宝"  class='x_f1 att' ui-sref="home"><em class="fa fa-home"></em>首页</a>
+			<a data-title="理财产品"  class='x_f2' ui-sref="concont"><em class="fa fa-list"></em>理财产品</a>
+			<a data-title=""  class='x_f3' ui-sref="third"><em class="fa fa-user"></em>我的账户</a>
+			<a data-title="更多"  class='x_f4' ui-sref="final"><em class="fa fa-cog"></em>更多</a>
+		</footer>
+	</div>
+	<script src="js/iscroll5.js"></script>
+	<script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+	<script src="js/zepto.min.js"></script>	
+	<script src="js/index.js"></script>
+	<script src="js/index1.js"></script>
+</body>
+</html>
